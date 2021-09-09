@@ -16,9 +16,9 @@ router.get('/', (req, res) => {
 });
 
 app.use(router);
-
+const uri = '';
 mongoose.connect(
-  'mongodb+srv://kiri:7iOheo3RSbQmxi5s@cluster0.sxkmm.mongodb.net/Cluster0?retryWrites=true&w=majority',
+  uri,
   { useUnifiedTopology: true, useNewUrlParser: true },
   (err) => {
     if (err) return console.log('Error: ', err);
